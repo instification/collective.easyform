@@ -337,7 +337,7 @@ class IMailer(IAction):
         ),
         unique=True,
         required=False,
-        default=[u"HTTP_X_FORWARDED_FOR", u"REMOTE_ADDR", u"PATH_INFO"],
+        default=[u"HTTP_X_FORWARDED_FOR", u"HTTP_X_FORWARDED_PORT", u"REMOTE_ADDR", u"PATH_INFO"],
         missing_value=[u"HTTP_X_FORWARDED_FOR", u"REMOTE_ADDR", u"PATH_INFO"],
         value_type=zope.schema.Choice(vocabulary="easyform.XinfoHeaders"),
     )
