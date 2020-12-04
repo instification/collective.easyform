@@ -46,6 +46,7 @@ def XinfoHeadersVocabularyFactory(context):
     return SimpleVocabulary.fromValues(
         (
             u"HTTP_X_FORWARDED_FOR",
+            u"HTTP_X_FORWARDED_PORT",
             u"REMOTE_ADDR",
             u"PATH_INFO",
             u"HTTP_USER_AGENT",
@@ -65,6 +66,7 @@ def ExtraDataDLVocabularyFactory(context):
     items = [
         (_(u"vocabulary_postingdt_text", default=u"Posting Date/Time"), u"dt"),
         (u"HTTP_X_FORWARDED_FOR", u"HTTP_X_FORWARDED_FOR"),
+        (u"HTTP_X_FORWARDED_PORT", u"HTTP_X_FORWARDED_PORT"),
         (u"REMOTE_ADDR", u"REMOTE_ADDR"),
         (u"HTTP_USER_AGENT", u"HTTP_USER_AGENT"),
     ]
